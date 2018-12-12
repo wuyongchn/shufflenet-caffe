@@ -1,0 +1,2 @@
+# shufflenet-caffe
+TODO: mobilenet
