@@ -9,7 +9,7 @@ from utils import print_net_parameters
 def prototxt_generator(args):
     net = make_shufflenet(args.version, args.scale, args.group)
     name = net.name.lower() + '-deploy.prototxt'
-    folder = args.network
+    folder = 'shufflenet'
     if not os.path.isdir(folder):
         os.makedirs(folder)
     with open(os.path.join(folder, name), 'w') as f:
